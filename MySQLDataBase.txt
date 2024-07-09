@@ -1,4 +1,4 @@
-/* This is a sample set of MySQL command which were used to create the schema, tables and entries for the table */
+/* This is a sample set of MySQL queries which were used to create the schema, tables and entries for the table */
 
 CREATE SCHEMA IF NOT EXISTS `gus`;
 USE `gus`;
