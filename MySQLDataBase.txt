@@ -1,0 +1,67 @@
+/* This is a sample set of MySQL command which were used to create the schema, tables and entries for the table */
+
+CREATE SCHEMA IF NOT EXISTS `gus`;
+USE `gus`;
+
+CREATE TABLE IF NOT EXISTS `users` (
+    `id` BIGINT AUTO_INCREMENT PRIMARY KEY,
+    `name` VARCHAR(100) NOT NULL,
+    `email` VARCHAR(100) UNIQUE NOT NULL,
+    `password` VARCHAR(100) NOT NULL,
+    `last_login` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+USE `gus`;
+-- Sample data for 50 users
+INSERT INTO `users` (`name`, `email`, `password`)
+VALUES
+    ('John Doe', 'john.doe@example.com', 'password1'),
+    ('Jane Smith', 'jane.smith@example.com', 'password2'),
+    ('Michael Johnson', 'michael.johnson@example.com', 'password3'),
+    ('Emily Brown', 'emily.brown@example.com', 'password4'),
+    ('William Davis', 'william.davis@example.com', 'password5'),
+    ('Emma Wilson', 'emma.wilson@example.com', 'password6'),
+    ('James Lee', 'james.lee@example.com', 'password7'),
+    ('Olivia Martinez', 'olivia.martinez@example.com', 'password8'),
+    ('Alexander Thompson', 'alexander.thompson@example.com', 'password9'),
+    ('Sophia Garcia', 'sophia.garcia@example.com', 'password10'),
+    ('Daniel Hernandez', 'daniel.hernandez@example.com', 'password11'),
+    ('Isabella Lopez', 'isabella.lopez@example.com', 'password12'),
+    ('Matthew Gonzalez', 'matthew.gonzalez@example.com', 'password13'),
+    ('Ava Wilson', 'ava.wilson@example.com', 'password14'),
+    ('Ethan Perez', 'ethan.perez@example.com', 'password15'),
+    ('Mia Torres', 'mia.torres@example.com', 'password16'),
+    ('Logan Ramirez', 'logan.ramirez@example.com', 'password17'),
+    ('Sophia Walker', 'sophia.walker@example.com', 'password18'),
+    ('Jacob Moore', 'jacob.moore@example.com', 'password19'),
+    ('Emily Hill', 'emily.hill@example.com', 'password20'),
+    ('Michael Ward', 'michael.ward@example.com', 'password21'),
+    ('Emma Reed', 'emma.reed@example.com', 'password22'),
+    ('Lucas Brooks', 'lucas.brooks@example.com', 'password23'),
+    ('Avery Long', 'avery.long@example.com', 'password24'),
+    ('Benjamin Kelly', 'benjamin.kelly@example.com', 'password25'),
+    ('Harper Wood', 'harper.wood@example.com', 'password26'),
+    ('Jacob Hughes', 'jacob.hughes@example.com', 'password27'),
+    ('Madison Price', 'madison.price@example.com', 'password28'),
+    ('Liam Fisher', 'liam.fisher@example.com', 'password29'),
+    ('Aria Murphy', 'aria.murphy@example.com', 'password30'),
+    ('William Bailey', 'william.bailey@example.com', 'password31'),
+    ('Ella Foster', 'ella.foster@example.com', 'password32'),
+    ('James Reed', 'james.reed@example.com', 'password33'),
+    ('Amelia Collins', 'amelia.collins@example.com', 'password34'),
+    ('Alexander Murphy', 'alexander.murphy@example.com', 'password35'),
+    ('Grace Ward', 'grace.ward@example.com', 'password36'),
+    ('Ryan Sanders', 'ryan.sanders@example.com', 'password37'),
+    ('Lily Watson', 'lily.watson@example.com', 'password38'),
+    ('Noah Marshall', 'noah.marshall@example.com', 'password39'),
+    ('Chloe Powell', 'chloe.powell@example.com', 'password40'),
+    ('Elijah Bennett', 'elijah.bennett@example.com', 'password41'),
+    ('Avery Foster', 'avery.foster@example.com', 'password42'),
+    ('Scarlett Rivera', 'scarlett.rivera@example.com', 'password43'),
+    ('Mason Cooper', 'mason.cooper@example.com', 'password44'),
+    ('Abigail Hayes', 'abigail.hayes@example.com', 'password45'),
+    ('Nathan Jenkins', 'nathan.jenkins@example.com', 'password46'),
+    ('Sofia Parker', 'sofia.parker@example.com', 'password47'),
+    ('Jackson Griffin', 'jackson.griffin@example.com', 'password48'),
+    ('Ava Richardson', 'ava.richardson@example.com', 'password49'),
+    ('David Reyes', 'david.reyes@example.com', 'password50');
