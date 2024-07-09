@@ -8,6 +8,25 @@ This is a simple REST-ful web service applictaion created as part of Genesys Hir
 - JDBC
 - Maven (Build Automation)
 
+## Endpoints (For Application running on localhost:8080)
+- List All Users (GET): localhost:8080/api/users
+- Login (POST): localhost:8080/api/users/login  || Requires two params: email and password
+- Create User (POST): localhost:8080/api/users  || Requires a JSON request body such as - 
+  {
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "password": "password1",
+        "lastLogin": "2024-07-09T17:51:17"
+ }
+- Delete User (DELETE): localhost:8080/api/users/{id}  || Requires user id at the end or the endpoint
+- Update User data (PUT): localhost:8080/api/users/{id} || Requires a JSON request body such as - 
+  {
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "password": "password1",
+        "lastLogin": "2024-07-09T17:51:17"
+ }
+
 ## Assumptions
 
 - Users have unique email addresses.
